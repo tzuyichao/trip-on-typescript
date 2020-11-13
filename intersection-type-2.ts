@@ -11,6 +11,8 @@ type TypeN = {
 // id: never
 type MixAN = TypeA & TypeN;
 
+type StringAndNumber = string & number;
+
 // const obj: MixAN = {
 //     id: 10
 // };
