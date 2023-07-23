@@ -6,7 +6,6 @@ import CardFooter from './component/CardFooter';
 function App() {
   const [inputValue, setInputValue] = useState(0);
   const handleInputChange = (e) => {
-    console.log("Change");
     const {value} = e.target;
     setInputValue(value);
   };
@@ -30,7 +29,7 @@ function App() {
           </div>
         </div>
       </div>
-      <CardFooter />
+      <CardFooter inputValue={inputValue} />
     </div>
   );
 }
