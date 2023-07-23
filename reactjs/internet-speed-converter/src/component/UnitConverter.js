@@ -1,11 +1,7 @@
 import { useState } from 'react';
 
-const UnitConverter = () => {
-    const [inputValue, setInputValue] = useState(0);
-    const handleInputChange = (e) => {
-      const {value} = e.target;
-      setInputValue(value);
-    };
+const UnitConverter = (props) => {
+    const { handleInputChange, inputValue } = props;
 
     return (
   <div className="converter">
